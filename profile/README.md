@@ -1,4 +1,4 @@
-## Welcome at Stackable
+## Welcome to Stackable
 
 We're a company based in Germany building a open source distribution for modern data platforms on top of Kubernetes.
 Our products are perfect for use within Data Mesh and other environments.
