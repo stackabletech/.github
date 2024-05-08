@@ -1,27 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "helpers:pinGitHubActionDigests"
-  ],
-  "labels": [
-    "dependencies"
-  ],
-  "prCreation": "not-pending",
-  "reviewers": [
-    "team:developers"
-  ],
-  "rollbackPrs": true,
-  "timezone": "Europe/Berlin",
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "groupName": "All dependencies (patch only)"
-    }
-  ],
-  "lockFileMaintenance": {
-    "enabled": true,
-  },
-  "ignorePaths": [".github/workflows/build.yml", ".github/workflows/general_daily_security.yml", ".github/workflows/pr_reviewdog.yaml"]
+  "description": "Onboarding preset for use with Stackable's repos",
+  "extends": ["github>stackabletech/.github//renovate-default.json5"]
 }
