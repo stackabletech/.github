@@ -23,5 +23,4 @@
   "lockFileMaintenance": {
     "enabled": true,
   },
-  "ignorePaths": [".github/workflows/build.yml", ".github/workflows/general_daily_security.yml", ".github/workflows/pr_reviewdog.yaml"]
 }
