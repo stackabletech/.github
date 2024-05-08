@@ -1,5 +1,5 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
   "description": "Onboarding preset for use with Stackable's repos",
   "extends": ["github>stackabletech/.github//renovate-default.json5"]
 }
