@@ -1,4 +1,4 @@
 {
   "description": "Onboarding preset for use with Stackable's repos",
-  "extends": ["github>stackabletech/.github//renovate-default.json5"]
+  "extends": ["github>stackabletech/.github:renovate-default.json5"]
 }
