@@ -3,6 +3,8 @@
   "extends": [
     "helpers:pinGitHubActionDigests"
   ],
+  "commitBodyTable": true,
+  "configMigration": true,
   "labels": [
     "dependencies"
   ],
