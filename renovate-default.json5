@@ -20,7 +20,11 @@
         "patch"
       ],
       "groupName": "All dependencies (patch only)"
-    }
+    },
+{
+    matchDatasources: ["docker"],
+    registryUrls: ["https://registry.k8s.io"]
+  }
   ],
   "lockFileMaintenance": {
     "enabled": true,
