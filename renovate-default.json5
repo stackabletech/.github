@@ -3,7 +3,7 @@
   "extends": [
     "config:best-practices",
     "default:dependencyDashboardApproval",
-    "default::prConcurrentLimitNone",
+    "default:prConcurrentLimitNone",
     "default:prHourlyLimitNone",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
