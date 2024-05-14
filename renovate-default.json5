@@ -3,6 +3,7 @@
   "extends": [
     "config:recommended",
     "default:dependencyDashboardApproval",
+    "default::prConcurrentLimitNone",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
   "commitBodyTable": true,
