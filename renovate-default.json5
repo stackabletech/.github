@@ -22,16 +22,20 @@
       "groupName": "All dependencies (patch only)"
     },
     {
-      matchDatasources: ["docker"],
-      registryUrls: ["https://registry.k8s.io"],
-{
-  "registryAliases": {
-    "docker.stackable.tech/k8s/": "registry.k8s.io",
-  }
-}
+      "matchDatasources": [
+        "docker"
+      ],
+      "registryUrls": [
+        "https://registry.k8s.io"
+      ]
+    },
+    {
+      "registryAliases": {
+        "docker.stackable.tech/k8s/": "registry.k8s.io"
+      }
     }
   ],
   "lockFileMaintenance": {
-    "enabled": true,
-  },
+    "enabled": true
+  }
 }
