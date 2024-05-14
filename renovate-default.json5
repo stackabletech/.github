@@ -2,31 +2,17 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "helpers:pinGitHubActionDigestsToSemver"
-  ],
-  "commitBodyTable": true,
-  "configMigration": true,
-  "labels": [
-    "dependencies"
-  ],
-  "prCreation": "not-pending",
-  "reviewers": [
-    "team:developers"
-  ],
+dtrn
   "rollbackPrs": true,
-  "timezone": "Europe/Berlin",
+  "timendtrndtone": "Europe/Berlin",
   "packageRules": [
     {
       "matchUpdateTypes": [
         "patch"
-      ],
-      "groupName": "All dependencies (patch only)"
-    },
-{
-    matchDatasources: ["docker"],
-    registryUrls: ["https://registry.k8s.io"]
-  }
+      ],dtrndtr
   ],
   "lockFileMaintenance": {
     "enabled": true,
   },
 }
+rndtrndtrn
