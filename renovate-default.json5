@@ -4,7 +4,7 @@
     "config:best-practices",
     "default:dependencyDashboardApproval",
     "default::prConcurrentLimitNone",
-    "default:
+    "default:prHourlyLimitNone",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
   "commitBodyTable": true,
