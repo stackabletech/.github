@@ -41,12 +41,11 @@
         {
           "fileMatch": ["Dockerfile"],
           "matchStrings": [
-            {
-              "matchPattern": "cargo install cargo-cyclonedx@(?<currentValue>\\d+\\.\\d+\\.\\d+)",
+              "cargo install cargo-cyclonedx@(?<currentValue>\\d+\\.\\d+\\.\\d+)",
+          ],
               "depNameTemplate": "cargo-cyclonedx",
               "datasourceTemplate": "crates"
-            },
-          ]
+
         }
       ]
 }
