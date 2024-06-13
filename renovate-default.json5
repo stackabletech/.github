@@ -44,7 +44,7 @@
               "cargo install cargo-cyclonedx@(?<currentValue>\\d+\\.\\d+\\.\\d+)",
           ],
               "depNameTemplate": "cargo-cyclonedx",
-              "datasourceTemplate": "crates"
+              "datasourceTemplate": "crate"
 
         }
       ]
