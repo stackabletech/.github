@@ -32,20 +32,35 @@
       "registryAliases": {
         "docker.stackable.tech/k8s/": "registry.k8s.io"
       }
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "registryUrls": [
+        "https://registry.access.redhat.com"
+      ],
+      "packagePatterns": [
+        "^ubi9/ubi-minimal$"
+      ],
+      "updateTypes": [
+        "version"
+      ]
     }
   ],
   "lockFileMaintenance": {
     "enabled": true
   },
-    customManagers: [
-        {
-          "fileMatch": ["Dockerfile"],
-          "matchStrings": [
-              "cargo install cargo-cyclonedx@(?<currentValue>\\d+\\.\\d+\\.\\d+)",
-          ],
-              "depNameTemplate": "cargo-cyclonedx",
-              "datasourceTemplate": "crate"
-
-        }
-      ]
+  "customManagers": [
+    {
+      "fileMatch": [
+        "Dockerfile"
+      ],
+      "matchStrings": [
+        "cargo install cargo-cyclonedx@(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+      ],
+      "depNameTemplate": "cargo-cyclonedx",
+      "datasourceTemplate": "crate"
+    }
+  ]
 }
