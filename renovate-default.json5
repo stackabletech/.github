@@ -39,14 +39,14 @@
   },
   "customManagers": [
     {
+      "customType": "regex",
+      "description": "Update _VERSION variables in Dockerfiles",
       "fileMatch": [
         "Dockerfile"
       ],
       "matchStrings": [
-        "cargo install cargo-cyclonedx@(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+        "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))? packageName=(?<packageName>.+?)\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
       ],
-      "depNameTemplate": "cargo-cyclonedx",
-      "datasourceTemplate": "crate"
     }
   ]
 }
