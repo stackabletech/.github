@@ -47,6 +47,17 @@
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))? packageName=(?<packageName>.+?)\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
       ],
+    },
+    {
+      "customType": "regex",
+      "description": "Update Python package versions in GitHub Actions workflows",
+      "fileMatch": [
+        ".github/workflows/.*\\.ya?ml"
+      ],
+      "matchStrings": [
+        "pip install (?<depName>[a-zA-Z0-9-_]+)==(?<currentValue>.+?)\\n"
+      ],
+      "datasourceTemplate": "pypi"
     }
   ]
 }
